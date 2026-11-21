@@ -1,53 +1,92 @@
-# Максим — junior бизнес-аналитик (процессы и требования + системный анализ)
+<p align="center">
+  <img src="media/monsterofbi-banner.webp" alt="MonsterOfBI — Business Analysis × AI. Технологический дракон на чёрно-фиолетовом фоне." width="100%">
+</p>
 
-Учусь и собираю **учебные кейсы** в финтехе и корпоративных финансах. Все проекты учебные: компании вымышленные, данные синтетические или открытые, внедрения не было. Ищу стажировку или junior-позицию BA/SA.
+<h1 align="center">Максим · Бизнес-аналитика × AI</h1>
 
-## Избранные кейсы
+<p align="center">
+  Процессы, требования и интеграции. Учебные кейсы в финтехе и корпоративных финансах.<br>
+  Открыт к стажировке или junior-позиции в бизнес- и системном анализе.
+</p>
 
-| Кейс | Проблема в одной фразе | Что показывает |
-|---|---|---|
-| [Согласование счетов с 1С и сверка с выпиской](https://github.com/MonsterOfBI/invoice-approval-1c) | Вымышленная торговая компания согласует счета в Excel и мессенджерах, платит пени и дубли. | BPMN, DMN, интервью, user stories, ER/SQL, интеграция с 1С, ROI |
-| [Оплата в интернет-магазине: карта, QR СБП, цифровой рубль, возвраты](https://github.com/MonsterOfBI/online-payments) | Системный кейс на тестовом магазине ЮKassa: платёж, webhook, чек 54-ФЗ, возврат. | REST/OpenAPI, идемпотентность, webhooks, sequence/state, Postman, платёжный домен |
-| [Проверка контрагента и кредитный лимит на данных ФНС](https://github.com/MonsterOfBI/counterparty-check) | Автопроверка новых контрагентов на реальных открытых данных ФНС: загрузка XML в PostgreSQL, скоринг правилами, лимит отсрочки, API и дашборд. | SQL CTE/окна, pandas, DMN, OpenAPI, DataLens, открытые данные |
-| [Финансовый ассистент для ИП](https://github.com/MonsterOfBI/sme-finance-assistant) | Требования к LLM-фиче для ИП (автокатегоризация операций, платёжный календарь, подсказки) и замер её качества на 200 размеченных операциях. | требования к LLM, метрики качества, BRD, pandas, OpenAPI |
+<p align="center">
+  <a href="#избранное">Избранное</a> · <a href="#все-проекты">Все проекты</a> · <a href="#инструменты">Инструменты</a>
+</p>
 
-## Мини-кейсы (каждый — свой навык)
+<picture>
+  <source media="(prefers-reduced-motion: reduce)" srcset="media/signal-static.png">
+  <img src="media/signal.gif" alt="" width="100%">
+</picture>
 
-Все мини-кейсы лежат в одном репозитории [ba-mini-cases](https://github.com/MonsterOfBI/ba-mini-cases), каждый в своей папке.
+## Избранное
 
-### Платежи и банк
-| Кейс | Навык |
-|---|---|
-| [Ключевая ставка ЦБ и пересчёт плавающих кредитов](https://github.com/MonsterOfBI/ba-mini-cases/tree/main/m3-key-rate-loans) | SOAP/WSDL, бизнес-правила, SQL |
-| [Разбор антифрод-алертов](https://github.com/MonsterOfBI/ba-mini-cases/tree/main/m5-antifraud-alerts) | DataLens, SQL, метрики процесса |
-| [Кэшбэк по категориям MCC](https://github.com/MonsterOfBI/ba-mini-cases/tree/main/m6-mcc-cashback) | DMN, генерация тестовых данных, SQL |
-| [KYC-онбординг ИП по 115-ФЗ](https://github.com/MonsterOfBI/ba-mini-cases/tree/main/m8-kyc-onboarding) | регуляторные требования, DMN, KPI |
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <a href="https://github.com/MonsterOfBI/sme-finance-assistant"><img src="media/sme-finance-assistant.webp" alt="Финансовый ассистент для ИП" width="100%"></a><br>
+      <strong><a href="https://github.com/MonsterOfBI/sme-finance-assistant">Финансовый ассистент для ИП</a></strong><br>
+      Требования к LLM, набор из 200 размеченных операций и проверка качества базовых правил.
+    </td>
+    <td width="50%" valign="top">
+      <a href="https://github.com/MonsterOfBI/invoice-approval-1c"><img src="media/invoice-approval-1c.webp" alt="Согласование счетов и 1С" width="100%"></a><br>
+      <strong><a href="https://github.com/MonsterOfBI/invoice-approval-1c">Согласование счетов и 1С</a></strong><br>
+      Маршрут согласования, контроль дублей, обмен с 1С и сверка банковской выписки.
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <a href="https://github.com/MonsterOfBI/online-payments"><img src="media/online-payments.webp" alt="Платежи интернет-магазина" width="100%"></a><br>
+      <strong><a href="https://github.com/MonsterOfBI/online-payments">Платежи интернет-магазина</a></strong><br>
+      Контракты платежей и возвратов, webhooks, статусы и защита от повторного списания.
+    </td>
+    <td width="50%" valign="top">
+      <a href="https://github.com/MonsterOfBI/counterparty-check"><img src="media/counterparty-check.webp" alt="Проверка контрагентов" width="100%"></a><br>
+      <strong><a href="https://github.com/MonsterOfBI/counterparty-check">Проверка контрагентов</a></strong><br>
+      XML → PostgreSQL, объяснимый скоринг и модель кредитного лимита.
+    </td>
+  </tr>
+</table>
 
-### Корпоративные финансы
-| Кейс | Навык |
-|---|---|
-| [Авансовые отчёты сотрудников](https://github.com/MonsterOfBI/ba-mini-cases/tree/main/m1-expense-reports) | BPMN, user stories, DMN |
-| [Курсы ЦБ и валютная переоценка](https://github.com/MonsterOfBI/ba-mini-cases/tree/main/m2-fx-revaluation) | XML/XSD, pandas, SQL |
-| [Дебиторка: напоминания, aging и DSO](https://github.com/MonsterOfBI/ba-mini-cases/tree/main/m4-receivables-dso) | SQL CTE/окна, BPMN таймеры |
-| [БДДС и платёжный календарь в Excel](https://github.com/MonsterOfBI/ba-mini-cases/tree/main/m7-cash-flow-budget) | Excel, БДДС, финансовый словарь |
+> **Контекст кейсов.** Компании вымышленные, данные синтетические или открытые. В кейсе про финпомощника измерено качество базовых правил. Оценочный прогон LLM ещё не проведён.
 
-### Вне финансов
-| Кейс | Навык |
-|---|---|
-| [Возврат товара на маркетплейсе](https://github.com/MonsterOfBI/ba-mini-cases/tree/main/n1-marketplace-returns) | BPMN, SQL на чужой схеме |
-| Заявка на отпуск (кейс на время) *(в работе: появится после первой попытки)* | выявление требований, BPMN, тайм-боксинг |
-| [Интеграция CRM ↔ 1С: от лида до счёта](https://github.com/MonsterOfBI/ba-mini-cases/tree/main/n3-crm-1c-integration) | интеграции, маппинг данных, sequence |
+## Все проекты
 
-## Навыки (честно)
+### Бизнес-анализ и финтех
 
-| Навык | Уровень | Где посмотреть |
-|---|---|---|
-| BPMN 2.0, DMN (Camunda Modeler) | применяю | Ф1, М1, Н1 |
-| User stories, Given/When/Then, НФТ | применяю | Ф1, Ф2, М1 |
-| SQL (PostgreSQL): JOIN, CTE, оконные функции | учусь, применяю в кейсах | Ф1, Ф2, М4 |
-| REST, OpenAPI, идемпотентность, Postman | учусь | Ф2, Н3 |
-| Интеграции, очереди (понятийно), sequence | учусь | Ф1, Ф2, Н3 |
-| Финансы: бухучёт (базово), платежи, СБП | учусь | Ф1, Ф2, М2 |
+| Проект | Что внутри |
+| :--- | :--- |
+| [Финансовый ассистент для ИП](https://github.com/MonsterOfBI/sme-finance-assistant) | LLM eval / Python / SQL |
+| [Согласование счетов и 1С](https://github.com/MonsterOfBI/invoice-approval-1c) | BPMN / DMN / 1С |
+| [Платежи интернет-магазина](https://github.com/MonsterOfBI/online-payments) | OpenAPI / webhooks / ЮKassa |
+| [Проверка контрагентов](https://github.com/MonsterOfBI/counterparty-check) | XML / PostgreSQL / DataLens |
+| [Мини-кейсы бизнес-аналитика](https://github.com/MonsterOfBI/ba-mini-cases) | SQL / API / финансовые модели |
 
-## Как я работаю с ИИ
-ИИ-ассистент (Claude) — тренажёр и ревьюер: играет стейкхолдеров на учебных интервью, генерирует синтетические данные, делает ревью. Первые версии кейсов собраны вместе с ним; что я переделал и проверил сам — в разделе «Как сделано» и в `DEFENSE.md` каждого репозитория. Кейс «Заявка на отпуск» решаю без ИИ, на время.
+### Веб и розница
+
+| Проект | Что внутри |
+| :--- | :--- |
+| [ECRU Кабинет](https://github.com/MonsterOfBI/ecru-kabinet) · [Демо](https://ecru-kabinet.vercel.app) | Дашборды / отчёты / рейтинги |
+| [testik](https://github.com/MonsterOfBI/testik) · [Демо](https://testik-gray.vercel.app) | Next.js / React / PostgreSQL |
+
+### Игровые проекты
+
+| Проект | Что внутри |
+| :--- | :--- |
+| [Шаурма-лавка](https://github.com/MonsterOfBI/shawarma-idle) · [Ветка first-version](https://github.com/MonsterOfBI/shawarma-idle/tree/first-version) | Phaser / TypeScript / Vite |
+| [Brainrot Waves](https://github.com/MonsterOfBI/brainrot-waves) · [Демо](https://brainrot-waves.vercel.app) | Unity / C# / WebGL |
+
+## Инструменты
+
+| Работа | Где посмотреть |
+| :--- | :--- |
+| **Процессы и требования** · BPMN, DMN, user stories, критерии приёмки | [TO-BE процесса согласования](https://github.com/MonsterOfBI/invoice-approval-1c/blob/main/bpmn/to-be.png) · [Требования](https://github.com/MonsterOfBI/invoice-approval-1c/blob/main/docs/04_requirements.md) |
+| **Системный анализ** · REST, OpenAPI, webhooks, идемпотентность | [Контракт платежей](https://github.com/MonsterOfBI/online-payments/blob/main/api/openapi.yaml) |
+| **Данные** · PostgreSQL, CTE, оконные функции, pandas, DataLens | [SQL-бэктест](https://github.com/MonsterOfBI/counterparty-check/tree/main/sql) · [Проект дашборда](https://github.com/MonsterOfBI/counterparty-check/blob/main/dashboard/datalens.md) |
+| **Оценка AI-функций** · разметка, эталоны, метрики, ограничения | [Протокол оценки](https://github.com/MonsterOfBI/sme-finance-assistant/blob/main/docs/04_metrics_and_eval.md) |
+
+<details>
+<summary><strong>Как я работаю с ИИ</strong></summary>
+
+Использую ИИ для симуляции интервью со стейкхолдерами, подготовки синтетических данных и ревью черновиков. Первые версии учебных кейсов собирал вместе с ИИ. В разделах «Как сделано» и файлах `DEFENSE.md` описал, что перепроверял и переделывал сам.
+
+</details>
